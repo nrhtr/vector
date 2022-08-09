@@ -7,7 +7,7 @@ use futures::{stream::BoxStream, FutureExt, StreamExt, TryFutureExt};
 use snafu::{ResultExt, Snafu};
 use tokio_util::codec::Encoder as _;
 use vector_common::internal_event::{
-    ByteSize, BytesSent, EventsSent, InternalEventHandle, Protocol,
+    ByteSize, BytesSent, EventsSent, InternalEventHandle as _, Protocol,
 };
 use vector_config::configurable_component;
 use vector_core::ByteSizeOf;

@@ -260,7 +260,7 @@ impl WebSocketSink {
         }
         let mut last_pong = Instant::now();
 
-        let bytes_sent = register!(BytesSent::from(Protocol("websocket".into(),)));
+        let bytes_sent = register!(BytesSent::from(Protocol::from("websocket")));
 
         loop {
             let result = tokio::select! {

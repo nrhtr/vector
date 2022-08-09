@@ -7,7 +7,7 @@ use snafu::{ResultExt, Snafu};
 use tokio_util::codec::Encoder as _;
 use tower::{Service, ServiceBuilder};
 use vector_common::internal_event::{
-    ByteSize, BytesSent, InternalEventHandle, Protocol, Registered,
+    ByteSize, BytesSent, InternalEventHandle as _, Protocol, Registered,
 };
 use vector_config::configurable_component;
 use vector_core::ByteSizeOf;

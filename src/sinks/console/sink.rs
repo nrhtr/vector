@@ -27,7 +27,7 @@ where
     T: io::AsyncWrite + Send + Sync + Unpin,
 {
     async fn run(mut self: Box<Self>, mut input: BoxStream<'_, Event>) -> Result<(), ()> {
-        let bytes_sent = register!(BytesSent::from(Protocol("console".into(),)));
+        let bytes_sent = register!(BytesSent::from(Protocol::from("console")));
         while let Some(mut event) = input.next().await {
             let event_byte_size = event.size_of();
             self.transformer.transform(&mut event);

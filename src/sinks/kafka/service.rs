@@ -69,7 +69,7 @@ impl KafkaService {
     pub(crate) fn new(kafka_producer: FutureProducer<KafkaStatisticsContext>) -> KafkaService {
         KafkaService {
             kafka_producer,
-            bytes_sent: register!(BytesSent::from(Protocol("kafka".into()))),
+            bytes_sent: register!(BytesSent::from(Protocol::from("kafka"))),
         }
     }
 }

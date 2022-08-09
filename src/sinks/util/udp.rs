@@ -12,7 +12,7 @@ use snafu::{ResultExt, Snafu};
 use tokio::{net::UdpSocket, sync::oneshot, time::sleep};
 use tokio_util::codec::Encoder;
 use vector_common::internal_event::{
-    ByteSize, BytesSent, InternalEventHandle, Protocol, Registered,
+    ByteSize, BytesSent, InternalEventHandle as _, Protocol, Registered,
 };
 use vector_config::configurable_component;
 use vector_core::ByteSizeOf;

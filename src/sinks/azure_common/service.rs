@@ -10,7 +10,7 @@ use futures::{future::BoxFuture, TryFutureExt};
 use tower::Service;
 use tracing::Instrument;
 use vector_common::internal_event::{
-    ByteSize, BytesSent, InternalEventHandle, Protocol, Registered,
+    ByteSize, BytesSent, InternalEventHandle as _, Protocol, Registered,
 };
 
 use crate::{
