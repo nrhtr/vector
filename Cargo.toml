@@ -449,7 +449,6 @@ sources-logs = [
   "sources-aws_sqs",
   "sources-datadog_agent",
   "sources-demo_logs",
-  "sources-dnstap",
   "sources-docker_logs",
   "sources-exec",
   "sources-file",
